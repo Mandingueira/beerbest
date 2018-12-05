@@ -1,0 +1,18 @@
+<div *ngIf="beers$">
+  <div class="header">
+    <h2>My favourites</h2>
+    <ng-template #noItem>
+      <p>No beers.</p>
+    </ng-template>
+  </div>
+
+  <div *ngIf="beers$.length !== 0; else noItem" [ngStyle.xs]="{'margin-left':'0px'}"
+       fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="32px" fxLayoutAlign="start stretch">
+    <div routerLink="/beer-details/{{beer.id}}" *ngFor="let beer of beers$" style="position:relative"
+         fxLayout="column"  class="box" fxLayoutAlign="start"
+         fxFlex="0 1 calc(25% - 32px)" fxFlex.md="0 1 calc(33.3% - 32px)" fxFlex.sm="0 1 calc(50% - 32px)" fxFlex.xs="100%" [ngStyle.xs]="{display: 'block'}" >
+      <app-card [beer]="beer" [beers$]="beers$"></app-card>
+    </div>
+  </div>
+
+</div>

@@ -1,1 +1,268 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+$yellow:#FFCA39;
+
+$primary: $yellow;
+
+body {
+  margin: 0;
+  background: #F2F2F2;
+  //font-family: 'Nunito', sans-serif;
+  //font-family: 'Catamaran', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.list {
+  height: 280px;
+  width: auto;
+  text-align: center;
+  background: #fff;
+  overflow-y: hidden;
+  margin-bottom:15px;
+  img{
+    height: 200px;
+    width: auto;
+    padding:30px;
+    transition: all 0.3s ease;
+  }
+
+}
+.ng-tns-c2-0.ng-star-inserted{
+  margin-bottom:32px;
+  margin-top: 5px;
+}
+
+.box{
+  outline: none;
+}
+
+.box:hover {
+  cursor: pointer;
+  .list{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.04);
+  }
+  img {
+    transform: scale(1.02);
+  }
+}
+
+.container-beer{
+  height: 75vh;
+  overflow-y: auto;
+}
+.container{
+  margin-left:32px;
+  height: 100vh;
+}
+@media (max-width: 600px) {
+  .container {
+    margin-left: 0;
+  }
+}
+#spinner {
+  opacity: 1 !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.modal {
+  text-align: center;
+  img{
+    margin-top:20px;
+    max-height: 50vh;
+    padding: 5px 50px;
+  }
+}
+
+.fav{
+  position: absolute !important;
+  right: 5px;
+}
+
+.selected{
+  color: $primary;
+}
+
+.no-selected{
+  color:#8a8a8a;
+}
+
+.check:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: $primary;
+  z-index: -1;
+}
+
+.check button:hover{
+  background: #000;
+  color:#fff;
+}
+
+.logo {
+  font-family: 'Satisfy', cursive;
+  @media (max-width: 400px) {
+    li {
+      font-size: 3em !important;
+    }
+  }
+  li{
+    list-style: none;
+    float:left;
+    font-size: 4em;
+    color: #fff;
+    font-weight: bold;
+    animation: animate 15s infinite;
+    opacity: .2;
+  }
+  @keyframes  animate{
+    0%{opacity: .2;}
+    1%{opacity: 1;}
+    100%{opacity: 1;}
+  }
+  li:nth-child(1) {
+    animation-delay: 0s;
+  }
+  li:nth-child(2) {
+    animation-delay: .2s;
+  }
+  li:nth-child(3) {
+    animation-delay: .4s;
+  }
+  li:nth-child(4) {
+    animation-delay: .6s;
+  }
+  li:nth-child(5) {
+    animation-delay: .8s;
+  }
+  li:nth-child(6) {
+    animation-delay: 1s;
+  }
+  li:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  li:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+}
+
+.question{
+  opacity: 0;
+  animation: animateq 100s infinite;
+  animation-delay: 1.3s;
+}
+@keyframes animateq{
+  0%{opacity: 0;}
+  1%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+.top{
+  padding:10px 0;
+  h2{
+    font-size: 35px;
+    color: #3B3844;
+    display:inline-block;
+    font-family: 'Satisfy', cursive;
+    cursor: pointer;
+    outline: none;
+    span{
+      color: $primary;
+    }
+  }
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
+  button{
+    margin-top:0;
+    color: #3B3844;
+  }
+}
+
+.logo{
+  h1{
+    font-size: 35px;
+    color: #3B3844;
+    display: inline-block;
+    font-family: 'Satisfy', cursive;
+  }
+
+  span {
+    color: $primary;
+  }
+}
+
+.header {
+  h2 {
+    color: #716c83;
+    font-size: 35px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .header h2 {
+    font-size: 20px;
+  }
+}
+
+.end{
+  width: 100vw;
+  background: #fbdb3e;
+  padding: 10px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.kids{
+  background: #ff6666;
+}
+
+.tagline{
+  font-family: 'Satisfy', cursive;
+  font-size:25px;
+  color:$primary;
+  margin: 5px 0 20px !important;
+}
+
+.mat-dialog-container {
+  padding: 20px 50px !important;
+}
+
+@media (max-width: 600px) {
+  .mat-dialog-container {
+    padding: 10px !important;
+  }
+  .padding {
+    padding: 0 !important;
+  }
+}
+
+.padding {
+  padding: 0 5%;
+}
+
+.mat-dialog-title {
+  margin: 10px 0 20px !important;
+}
+
+.modal-box {
+  line-height: 1.8;
+  margin-top:15px;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.active {
+  display:none;
+}

@@ -1,0 +1,44 @@
+<div *ngIf="beer$" fxLayout="column">
+    <div fxLayout="row" fxLayoutAlign="space-between start" >
+        <h1>{{ beer$.name }} <span class="tagline"> - {{beer$.tagline}}</span></h1>
+        <button style="position: relative; right: 20px" (click)="closeDialog()" mat-icon-button>
+            <mat-icon aria-label="close">close</mat-icon>
+        </button>
+    </div>
+
+    <mat-dialog-content class="mat-typography">
+        <div fxLayout="row " fxLayout.xs="column" fxLayoutGap="32px" fxLayoutAlign="space-beetwen">
+            <div class="modal">
+                <img [src]="beer$?.image_url">
+            </div>
+            <div class="modal-box">
+                <p><strong>First brewed:</strong> {{beer$?.first_brewed}}</p>
+                <p><strong>Description:</strong> <br>{{beer$?.description}}</p>
+                <p><strong>Brewers tips:</strong> <br>{{beer$?.brewers_tips}}</p>
+                <p><strong>IBU:</strong> {{beer$?.ibu}}   <strong>ABV:</strong> {{beer$?.abv}}   <strong>EBC:</strong> {{beer$?.ebc}}</p>
+            </div>
+        </div>
+
+        <div [ngStyle.xs]="{'margin-left':'0px'}" class="back">
+            <div>
+                <p><strong>You might also like:</strong></p>
+            </div>
+            <div
+             fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="32px" fxLayoutAlign="start stretch">
+            <div routerLink="/beer-details/{{beer.id}}" (click)="addActivity();" *ngFor="let beer of similar"
+                 fxLayout="column"  class="box" fxLayoutAlign="start"
+                 fxFlex="0 1 calc(33.3 - 32px)" fxFlex.md="0 1 calc(33.3% - 32px)" fxFlex.sm="0 1 calc(33.3% - 32px)" fxFlex.xs="100%" [ngStyle.xs]="{display: 'block'}" >
+                <app-card [beer]="beer" [beers$]="similar">
+                    <p><small>IBU: {{beer?.ibu}} | ABV: {{beer?.abv}} | EBC: {{beer?.ebc}}</small></p>
+                </app-card>
+            </div>
+            <div style="width:100vw" *ngIf="finished">That's all</div>
+            </div>
+        </div>
+    </mat-dialog-content>
+</div>
+
+
+
+
+

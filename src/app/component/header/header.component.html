@@ -1,0 +1,7 @@
+<div class="top" fxLayout="row" fxLayoutAlign="space-between center">
+  <h2 routerLink="/beers">Beer<span>BEST</span></h2>
+  <span class="fill-remaining-space"></span>
+  <a routerLink="/about" routerLinkActive="active"><button mat-button><mat-icon [ngClass]="'selected'" aria-label="favourite">gesture</mat-icon><span fxHide="false" fxHide.xs> About </span></button></a>
+  <a routerLink="/beers" routerLinkActive="active"><button mat-button><mat-icon [ngClass]="'selected'" aria-label="drink">local_drink</mat-icon><span fxHide="false" fxHide.xs> Beer</span></button></a>
+  <a routerLink="/favourite" routerLinkActive="active"><button mat-button><mat-icon [ngClass]="'selected'" aria-label="favourite">favorite</mat-icon><span fxHide="false" fxHide.xs> My favourites </span></button></a>
+</div>

@@ -1,0 +1,12 @@
+<div class="list">
+    <img [src]="beer['image_url']">
+    <button mat-icon-button color="warn" class="fav" (click)="addToFavourite(beer.id)" matTooltip="Add beer to favourite">
+        <mat-icon [ngClass]="beer.selected?'selected':'no-selected'" aria-label="add to favourite">favorite</mat-icon>
+    </button>
+</div>
+<div style="text-align: center">
+    <h3>{{beer['name']}}</h3>
+    <p>{{beer['tagline']}}</p>
+
+    <ng-content></ng-content>
+</div>

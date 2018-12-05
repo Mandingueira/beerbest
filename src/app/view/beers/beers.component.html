@@ -1,0 +1,24 @@
+
+
+<div class="container-beer" [ngStyle.xs]="{'margin-left':'0px'}"
+     fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="32px" fxLayoutAlign="start stretch"
+          infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="150" (scrolled)="onScroll()" [scrollWindow]="false">
+    <div class="header" style="width:100vw">
+        <h2 >Our beers</h2>
+    </div>
+    <div routerLink="/beer-details/{{beer.id}}" *ngFor="let beer of beers$" style="position:relative"
+         fxLayout="column"  class="box" fxLayoutAlign="start"
+         fxFlex="0 1 calc(25% - 32px)" fxFlex.md="0 1 calc(33.3% - 32px)" fxFlex.sm="0 1 calc(50% - 32px)" fxFlex.xs="100%" [ngStyle.xs]="{display: 'block'}" >
+        <app-card [beer]="beer" [beers$]="beers$"></app-card>
+    </div>
+    <div class="end" *ngIf="finished">That's all</div>
+</div>
+
+
+
+
+
+
+
+
+

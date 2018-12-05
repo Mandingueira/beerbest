@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit" class="example-container container-beer">
+    <mat-form-field>
+      <input [(ngModel)]="message.subject" matInput placeholder="Subject" name="subject" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea [(ngModel)]="message.message" matInput placeholder="Your message" name="message" required></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input [(ngModel)]="message.name" matInput placeholder="Name" name="name" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input [(ngModel)]="message.email" matInput placeholder="Email" [formControl]="email" name="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <button mat-button type="submit">Submit</button>
+</form>
