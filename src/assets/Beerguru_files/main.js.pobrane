@@ -1,0 +1,839 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _view_beers_beers_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./view/beers/beers.component */ "./src/app/view/beers/beers.component.ts");
+/* harmony import */ var _view_for_kids_for_kids_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./view/for-kids/for-kids.component */ "./src/app/view/for-kids/for-kids.component.ts");
+/* harmony import */ var _view_check_age_check_age_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./view/check-age/check-age.component */ "./src/app/view/check-age/check-age.component.ts");
+/* harmony import */ var _view_beer_details_beer_details_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./view/beer-details/beer-details.component */ "./src/app/view/beer-details/beer-details.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var routes = [
+    {
+        path: '',
+        component: _view_check_age_check_age_component__WEBPACK_IMPORTED_MODULE_4__["CheckAgeComponent"],
+    },
+    {
+        path: 'check-age',
+        component: _view_check_age_check_age_component__WEBPACK_IMPORTED_MODULE_4__["CheckAgeComponent"],
+    },
+    {
+        path: 'beers',
+        component: _view_beers_beers_component__WEBPACK_IMPORTED_MODULE_2__["BeersComponent"],
+    },
+    {
+        path: 'beer-details/:id',
+        component: _view_beer_details_beer_details_component__WEBPACK_IMPORTED_MODULE_5__["BeerDetailsComponent"],
+    },
+    {
+        path: 'for-kids',
+        component: _view_for_kids_for_kids_component__WEBPACK_IMPORTED_MODULE_3__["ForKidsComponent"],
+    },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.html":
+/*!************************************!*\
+  !*** ./src/app/app.component.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"container>\">\n  <app-top></app-top>\n\n  <div id=\"content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/app.component.scss":
+/*!************************************!*\
+  !*** ./src/app/app.component.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'beerbest';
+    }
+    AppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
+        })
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./material */ "./src/app/material.ts");
+/* harmony import */ var _component_top_top_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/top/top.component */ "./src/app/component/top/top.component.ts");
+/* harmony import */ var _view_check_age_check_age_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./view/check-age/check-age.component */ "./src/app/view/check-age/check-age.component.ts");
+/* harmony import */ var _view_for_kids_for_kids_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./view/for-kids/for-kids.component */ "./src/app/view/for-kids/for-kids.component.ts");
+/* harmony import */ var _view_beers_beers_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./view/beers/beers.component */ "./src/app/view/beers/beers.component.ts");
+/* harmony import */ var _view_beer_details_beer_details_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./view/beer-details/beer-details.component */ "./src/app/view/beer-details/beer-details.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var _component_card_card_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./component/card/card.component */ "./src/app/component/card/card.component.ts");
+/* harmony import */ var ngx_spinner__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-spinner */ "./node_modules/ngx-spinner/fesm5/ngx-spinner.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _component_top_top_component__WEBPACK_IMPORTED_MODULE_6__["TopComponent"],
+                _view_check_age_check_age_component__WEBPACK_IMPORTED_MODULE_7__["CheckAgeComponent"],
+                _view_for_kids_for_kids_component__WEBPACK_IMPORTED_MODULE_8__["ForKidsComponent"],
+                _view_beers_beers_component__WEBPACK_IMPORTED_MODULE_9__["BeersComponent"],
+                _view_beer_details_beer_details_component__WEBPACK_IMPORTED_MODULE_10__["BeerDetailsComponent"],
+                _component_card_card_component__WEBPACK_IMPORTED_MODULE_13__["CardComponent"],
+            ],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
+                _material__WEBPACK_IMPORTED_MODULE_5__["MaterialModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"],
+                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__["FlexLayoutModule"],
+                ngx_spinner__WEBPACK_IMPORTED_MODULE_14__["NgxSpinnerModule"]
+            ],
+            providers: [],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/component/card/card.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/component/card/card.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n"
+
+/***/ }),
+
+/***/ "./src/app/component/card/card.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/component/card/card.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div {\n  display: block;\n  padding: 32px;\n  border: 1px solid black;\n  border-radius: 8px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2NhcmQvQzpcXFVzZXJzXFxBc2lhXFxEZXNrdG9wXFxiZWVyZ3VydS1tb2NrdXBzXFxiZWVyZ3VydS9zcmNcXGFwcFxcY29tcG9uZW50XFxjYXJkXFxjYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBYztFQUNkLGNBQWE7RUFDYix3QkFBdUI7RUFDdkIsbUJBQWtCLEVBQ25CIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50L2NhcmQvY2FyZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdntcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBwYWRkaW5nOiAzMnB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIGJvcmRlci1yYWRpdXM6IDhweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/component/card/card.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/component/card/card.component.ts ***!
+  \**************************************************/
+/*! exports provided: CardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardComponent", function() { return CardComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CardComponent = /** @class */ (function () {
+    function CardComponent() {
+    }
+    CardComponent.prototype.ngOnInit = function () {
+    };
+    CardComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-card',
+            template: __webpack_require__(/*! ./card.component.html */ "./src/app/component/card/card.component.html"),
+            styles: [__webpack_require__(/*! ./card.component.scss */ "./src/app/component/card/card.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CardComponent);
+    return CardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/component/top/top.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/component/top/top.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  top works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/component/top/top.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/component/top/top.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC90b3AvdG9wLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/component/top/top.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/component/top/top.component.ts ***!
+  \************************************************/
+/*! exports provided: TopComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopComponent", function() { return TopComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TopComponent = /** @class */ (function () {
+    function TopComponent() {
+    }
+    TopComponent.prototype.ngOnInit = function () {
+    };
+    TopComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-top',
+            template: __webpack_require__(/*! ./top.component.html */ "./src/app/component/top/top.component.html"),
+            styles: [__webpack_require__(/*! ./top.component.scss */ "./src/app/component/top/top.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TopComponent);
+    return TopComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/material.ts":
+/*!*****************************!*\
+  !*** ./src/app/material.ts ***!
+  \*****************************/
+/*! exports provided: MaterialModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialModule", function() { return MaterialModule; });
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var MaterialModule = /** @class */ (function () {
+    function MaterialModule() {
+    }
+    MaterialModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_material__WEBPACK_IMPORTED_MODULE_0__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_0__["MatCardModule"]
+            ],
+            exports: [
+                _angular_material__WEBPACK_IMPORTED_MODULE_0__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_0__["MatCardModule"]
+            ],
+        })
+    ], MaterialModule);
+    return MaterialModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/beer.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/service/beer.service.ts ***!
+  \*****************************************/
+/*! exports provided: BeerService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BeerService", function() { return BeerService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BeerService = /** @class */ (function () {
+    function BeerService(http) {
+        this.http = http;
+        this.link = 'https://api.punkapi.com/v2/beers/';
+    }
+    BeerService.prototype.getBeers = function () {
+        return this.http.get(this.link);
+    };
+    BeerService.prototype.getSingleBeer = function (id) {
+        return this.http.get(this.link + id);
+    };
+    BeerService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], BeerService);
+    return BeerService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view/beer-details/beer-details.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/view/beer-details/beer-details.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf=\"beer$\">\n  <h1>{{ beer$.name }}</h1>\n\n  <ul>\n    <li>\n      <p>{{beer$.tagline}}</p>\n      <p>{{beer$.first_brewed}}</p>\n      <p>{{beer$.description}}</p>\n    </li>\n\n  </ul>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/view/beer-details/beer-details.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/view/beer-details/beer-details.component.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXcvYmVlci1kZXRhaWxzL2JlZXItZGV0YWlscy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/view/beer-details/beer-details.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/view/beer-details/beer-details.component.ts ***!
+  \*************************************************************/
+/*! exports provided: BeerDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BeerDetailsComponent", function() { return BeerDetailsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_beer_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../service/beer.service */ "./src/app/service/beer.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var BeerDetailsComponent = /** @class */ (function () {
+    function BeerDetailsComponent(beer, route) {
+        var _this = this;
+        this.beer = beer;
+        this.route = route;
+        this.route.params.subscribe(function (params) { return _this.beer$ = params.id; });
+    }
+    BeerDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.beer.getSingleBeer(this.beer$).subscribe(function (data) { return _this.beer$ = data[0]; });
+    };
+    BeerDetailsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-beer-details',
+            template: __webpack_require__(/*! ./beer-details.component.html */ "./src/app/view/beer-details/beer-details.component.html"),
+            styles: [__webpack_require__(/*! ./beer-details.component.scss */ "./src/app/view/beer-details/beer-details.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_service_beer_service__WEBPACK_IMPORTED_MODULE_1__["BeerService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+    ], BeerDetailsComponent);
+    return BeerDetailsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view/beers/beers.component.html":
+/*!*************************************************!*\
+  !*** ./src/app/view/beers/beers.component.html ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<script src=\"beers.component.spec.ts\"></script><h2>Beers</h2>\n<ngx-spinner\n        bdColor = \"rgba(255,255,255,0.1)\"\n        size = \"medium\"\n        color = \"#f8c530\"\n        type = \"ball-scale-ripple-multiple\"\n></ngx-spinner>\n<div fxLayout=\"row wrap\" fxLayout.lt-sm=\"column\" fxLayoutGap=\"32px\" fxLayoutWrap fxLayoutAlign=\"space-between stretch\" >\n  <div *ngFor=\"let beer of beers$\" style=\"border: 1px solid aqua\" fxFlex=\"0 1 calc(25% - 32px)\" fxFlex.lt-md=\"0 1 calc(50% - 32px)\" fxFlex.lt-sm=\"100%\" >\n    <div class=\"list\"  >\n      <a routerLink=\"/beer-details/{{beer.id}}\">{{beer.name}}</a>\n      <p>{{beer.tagline}}</p>\n      <img [src]=\"beer.image_url\">\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/view/beers/beers.component.scss":
+/*!*************************************************!*\
+  !*** ./src/app/view/beers/beers.component.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXcvYmVlcnMvYmVlcnMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/view/beers/beers.component.ts":
+/*!***********************************************!*\
+  !*** ./src/app/view/beers/beers.component.ts ***!
+  \***********************************************/
+/*! exports provided: BeersComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BeersComponent", function() { return BeersComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_beer_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../service/beer.service */ "./src/app/service/beer.service.ts");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+/* harmony import */ var ngx_spinner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-spinner */ "./node_modules/ngx-spinner/fesm5/ngx-spinner.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var BeersComponent = /** @class */ (function () {
+    function BeersComponent(beer, spinner) {
+        this.beer = beer;
+        this.spinner = spinner;
+    }
+    BeersComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.spinner.show();
+        this.beer.getBeers().subscribe(function (data) {
+            _this.beers$ = data;
+            _this.spinner.hide();
+        });
+    };
+    BeersComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-beers',
+            template: __webpack_require__(/*! ./beers.component.html */ "./src/app/view/beers/beers.component.html"),
+            styles: [__webpack_require__(/*! ./beers.component.scss */ "./src/app/view/beers/beers.component.scss")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('list', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('* <=> *', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["query"])(':enter', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({ opacity: 0, transform: 'translateY(-15px)' }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["stagger"])('50ms', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('550ms ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({ opacity: 1, transform: 'translateY(0px)' })))
+                        ], { optional: true }),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["query"])(':leave', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('50ms', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({ opacity: 0 })), {
+                            optional: true
+                        })
+                    ])
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_service_beer_service__WEBPACK_IMPORTED_MODULE_1__["BeerService"], ngx_spinner__WEBPACK_IMPORTED_MODULE_3__["NgxSpinnerService"]])
+    ], BeersComponent);
+    return BeersComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view/check-age/check-age.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/view/check-age/check-age.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Are you over 18?</h2>\n<button routerLink=\"beers\">Yes</button>\n<button routerLink=\"for-kids\">No</button>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/view/check-age/check-age.component.scss":
+/*!*********************************************************!*\
+  !*** ./src/app/view/check-age/check-age.component.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXcvY2hlY2stYWdlL2NoZWNrLWFnZS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/view/check-age/check-age.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/view/check-age/check-age.component.ts ***!
+  \*******************************************************/
+/*! exports provided: CheckAgeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckAgeComponent", function() { return CheckAgeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CheckAgeComponent = /** @class */ (function () {
+    function CheckAgeComponent() {
+    }
+    CheckAgeComponent.prototype.ngOnInit = function () {
+    };
+    CheckAgeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-check-age',
+            template: __webpack_require__(/*! ./check-age.component.html */ "./src/app/view/check-age/check-age.component.html"),
+            styles: [__webpack_require__(/*! ./check-age.component.scss */ "./src/app/view/check-age/check-age.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CheckAgeComponent);
+    return CheckAgeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view/for-kids/for-kids.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/view/for-kids/for-kids.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "Teddy dancing"
+
+/***/ }),
+
+/***/ "./src/app/view/for-kids/for-kids.component.scss":
+/*!*******************************************************!*\
+  !*** ./src/app/view/for-kids/for-kids.component.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXcvZm9yLWtpZHMvZm9yLWtpZHMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/view/for-kids/for-kids.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/view/for-kids/for-kids.component.ts ***!
+  \*****************************************************/
+/*! exports provided: ForKidsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForKidsComponent", function() { return ForKidsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ForKidsComponent = /** @class */ (function () {
+    function ForKidsComponent() {
+    }
+    ForKidsComponent.prototype.ngOnInit = function () {
+    };
+    ForKidsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-for-kids',
+            template: __webpack_require__(/*! ./for-kids.component.html */ "./src/app/view/for-kids/for-kids.component.html"),
+            styles: [__webpack_require__(/*! ./for-kids.component.scss */ "./src/app/view/for-kids/for-kids.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ForKidsComponent);
+    return ForKidsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+var environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.error(err); });
+
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0 ./src/main.ts ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\Asia\Desktop\beerbest-mockups\beerbest\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0");
+module.exports = __webpack_require__(/*! C:\Users\Asia\Desktop\beerbest-mockups\beerbest\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map
